@@ -1,0 +1,110 @@
+[
+ {
+  "id": "pneumothorax_left_pa",
+  "file": "pneumothorax_left_pa.jpg",
+  "title": "Pneumothorax (upright PA)",
+  "teaching_finding": "Left-sided spontaneous tension pneumothorax with slight mediastinal shift.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Maessiger_Spannungspneumothorax_links_21M_-_CR_pa_-_001.jpg",
+  "author": "Hellerhoff",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "original_size": [
+   1534,
+   1971
+  ],
+  "bundled_size": [
+   1090,
+   1400
+  ]
+ },
+ {
+  "id": "pleural_effusion_left_ap",
+  "file": "pleural_effusion_left_ap.jpg",
+  "title": "Pleural effusion (AP)",
+  "teaching_finding": "Large left pleural effusion with mediastinal shift to the right.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Mediastinalshift_nach_rechts_bei_grossem_Pleuraerguss_links_77W_-_CR_ap_-_001.jpg",
+  "author": "Hellerhoff",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "original_size": [
+   1598,
+   1123
+  ],
+  "bundled_size": [
+   1400,
+   984
+  ]
+ },
+ {
+  "id": "ett_right_mainstem_ap",
+  "file": "ett_right_mainstem_ap.jpg",
+  "title": "ET tube + lines (AP, ICU)",
+  "teaching_finding": "Endotracheal tube tip in the right main bronchus; right internal jugular line and ECG leads.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Trachealtubus_mit_der_Spitze_im_rechten_Hauptbronchus_79W_-_CR_ap_-_001.jpg",
+  "author": "Hellerhoff",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "original_size": [
+   2006,
+   1882
+  ],
+  "bundled_size": [
+   1400,
+   1313
+  ]
+ },
+ {
+  "id": "central_venous_catheter_pa",
+  "file": "central_venous_catheter_pa.jpg",
+  "title": "Central venous catheter (PA)",
+  "teaching_finding": "Central venous catheter in an otherwise unremarkable film.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Human_chest_x-ray,_adult_male,_with_central_venous_catheter.jpg",
+  "author": "Unknown (public-domain release)",
+  "license": "Public domain",
+  "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "original_size": [
+   2837,
+   2864
+  ],
+  "bundled_size": [
+   1387,
+   1400
+  ]
+ },
+ {
+  "id": "normal_pa",
+  "file": "normal_pa.jpg",
+  "title": "Normal (PA)",
+  "teaching_finding": "Normal posteroanterior chest radiograph.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg",
+  "author": "Mikael Häggström",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "original_size": [
+   1929,
+   2207
+  ],
+  "bundled_size": [
+   1224,
+   1400
+  ]
+ },
+ {
+  "id": "supine_icu_pneumothorax_deep_sulcus",
+  "file": "supine_icu_pneumothorax_deep_sulcus.jpg",
+  "title": "Supine portable ICU film",
+  "teaching_finding": "Supine AP ICU film: left pneumothorax with deep sulcus sign.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Deep_sulcus_sign_59jm_-_Roe_-_001.jpg",
+  "author": "Hellerhoff",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "original_size": [
+   1932,
+   2428
+  ],
+  "bundled_size": [
+   1114,
+   1400
+  ]
+ }
+]

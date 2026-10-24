@@ -1,0 +1,42 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.16,
+  "text": "A narrow chest X-ray model (TorchXRayVision DenseNet-121) running on a laptop CPU"
+ },
+ {
+  "start": 4.26,
+  "end": 9.57,
+  "text": "Pneumothorax film: top score is “Mass” 0.80; pneumothorax sits at the 0.50 threshold"
+ },
+ {
+  "start": 9.67,
+  "end": 13.78,
+  "text": "The heatmap shows where the model looked, not where the disease is"
+ },
+ {
+  "start": 13.88,
+  "end": 19.79,
+  "text": "Heatmap for “Pneumothorax” lands on the trachea, not the pleural edge"
+ },
+ {
+  "start": 19.89,
+  "end": 22.33,
+  "text": "ET tube tip in the right main bronchus: an urgent ICU finding"
+ },
+ {
+  "start": 22.43,
+  "end": 26.27,
+  "text": "This model has no tube-position output at all"
+ },
+ {
+  "start": 26.37,
+  "end": 30.56,
+  "text": "Its heatmap sits around the carina and right hilum, near the tube and lines"
+ },
+ {
+  "start": 30.66,
+  "end": 36.06,
+  "text": "Scores are not diagnoses. Check the film yourself."
+ }
+]

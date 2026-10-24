@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CXR AI Teaching Sandbox</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>CXR AI Teaching Sandbox</h1>
+    <p class="sub">What a narrow chest X-ray model does — and how it can mislead you</p>
+  </div>
+</header>
+<div class="disclaimer" role="note">Teaching and research only — not a clinical device.</div>
+
+<main class="layout">
+  <section class="panel picker" aria-labelledby="pick-h">
+    <h2 id="pick-h">1 · Pick a film</h2>
+    <div id="samples" class="samples"></div>
+    <label class="upload">
+      <input id="upload" type="file" accept="image/png,image/jpeg,image/webp,image/bmp">
+      <span>Upload your own (PNG/JPEG, no patient data)</span>
+    </label>
+    <p class="hint">Uploads are analysed in memory on this computer and never stored.</p>
+  </section>
+
+  <section class="panel viewer" aria-labelledby="view-h">
+    <div class="viewer-head">
+      <h2 id="view-h">2 · Image</h2>
+      <div class="controls">
+        <button id="whybtn" class="why" type="button" aria-controls="mislead" aria-expanded="false">⚠ Why this can mislead you</button>
+        <label class="toggle"><input id="heat" type="checkbox"> <span>Heatmap</span></label>
+        <label class="for">for <select id="camlabel" aria-label="Heatmap label"></select></label>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <img id="img" alt="Selected chest X-ray" hidden>
+      <img id="overlay" alt="Grad-CAM heatmap overlay" hidden>
+      <div id="placeholder" class="placeholder">Pick a film to run the model</div>
+      <div id="busy" class="busy" hidden>Running model…</div>
+    <div class="mislead" id="mislead" role="dialog" aria-labelledby="mis-h" hidden>
+      <h2 id="mis-h">Why this can mislead you</h2>
+      <ul>
+        <li><b>Trained mostly on upright PA films</b> from outpatient and ward datasets. Supine, rotated, portable ICU films are out of distribution.</li>
+        <li><b>Lines and tubes can drive predictions.</b> The model may learn "sick-patient hardware" as a shortcut for disease.</li>
+        <li><b>No tube-position label.</b> It cannot tell you whether the ET tube, NG tube or CVC tip is in the right place.</li>
+        <li><b>Scores are not diagnoses.</b> A heatmap shows where the model looked, not where the disease is.</li>
+      </ul>
+      <button id="whyclose" class="close" type="button">Close</button>
+    </div>
+    </div>
+    <p id="caption" class="caption"></p>
+    <p class="stamp">Model output · Teaching and research only — not a clinical device.</p>
+  </section>
+
+  <section class="side">
+    <div class="panel findings" aria-labelledby="find-h">
+      <h2 id="find-h">3 · Top findings</h2>
+      <ol id="findings" class="bars"></ol>
+      <div class="missing" id="missing">
+        <b>Tube / line position</b>
+        <span>No output — this model was never trained to answer it.</span>
+      </div>
+      <p class="hint">Scores are calibrated so 0.50 ≈ the model's operating threshold. They are not probabilities of disease and not diagnoses.</p>
+    </div>
+  </section>
+</main>
+<footer class="foot">TorchXRayVision DenseNet-121 (densenet121-res224-all) · Grad-CAM · CPU · Dr. Atul Tiwari · Vedant Research Labs · Images: Wikimedia Commons, see samples/ATTRIBUTION.md</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
